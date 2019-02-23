@@ -17,10 +17,10 @@ servo(ch,angle) : ควบคุมเซอร์โวมอเตอร์
 ## Example for use
 
 ```C++
-  #include <IBIT.h>
+#include <IBIT.h>
 
 void setup() {
-  IBIT();  // initial ibit system
+  IBIT();  // initial ibit system (important for use ibit lib)
   Serial.begin(115200);
 
   motor(1, 255);  // motor 1 forward maximun speed is 255

@@ -57,30 +57,51 @@ void motor2(int Pow){
     analogWrite(PWM2,Pow);
 }
 
-void fd2(int speed1,int speed2){
+void fd2(int _speed1,int _speed2){
 
-  digitalWrite(DIR1,1);analogWrite(PWM1,speed1);
-  digitalWrite(DIR2,0);analogWrite(PWM2,speed2);    
+  digitalWrite(DIR1,1);analogWrite(PWM1,_speed1);
+  digitalWrite(DIR2,0);analogWrite(PWM2,_speed2);    
 }
-void bk2(int speed1,int speed2){
+void bk2(int _speed1,int _speed2){
  
-  digitalWrite(DIR1,0);analogWrite(PWM1,speed1);
-  digitalWrite(DIR2,1);analogWrite(PWM2,speed2);    
-}
-void sl(int speeds){
-  
-  digitalWrite(DIR1,0);analogWrite(PWM1,speeds);
-  digitalWrite(DIR2,0);analogWrite(PWM2,speeds);    
-}
-void sr(int speeds){
-  
-  digitalWrite(DIR1,1);analogWrite(PWM1,speeds);
-  digitalWrite(DIR2,1);analogWrite(PWM2,speeds);    
+  digitalWrite(DIR1,0);analogWrite(PWM1,_speed1);
+  digitalWrite(DIR2,1);analogWrite(PWM2,_speed2);    
 }
 
-void motorControl(int speedL, int speedR){
-    motor1(speedL);
-    motor2(speedR);
+void fd(int _speed1){
+
+  digitalWrite(DIR1,1);analogWrite(PWM1,_speed1);
+  digitalWrite(DIR2,0);analogWrite(PWM2,_speed1);    
+}
+void bk(int _speed1){
+  digitalWrite(DIR1,0);analogWrite(PWM1,_speed1);
+  digitalWrite(DIR2,1);analogWrite(PWM2,_speed1);    
+}
+
+void sl(int _speeds){
+  digitalWrite(DIR1,0);analogWrite(PWM1,_speeds);
+  digitalWrite(DIR2,0);analogWrite(PWM2,_speeds);    
+}
+void sr(int _speeds){
+  
+  digitalWrite(DIR1,1);analogWrite(PWM1,_speeds);
+  digitalWrite(DIR2,1);analogWrite(PWM2,_speeds);    
+}
+
+void tl(int _speeds){
+  
+  digitalWrite(DIR1,1);analogWrite(PWM1,0);
+  digitalWrite(DIR2,0);analogWrite(PWM2,_speeds);    
+}
+void tr(int _speeds){
+  
+  digitalWrite(DIR1,1);analogWrite(PWM1,_speeds);
+  digitalWrite(DIR2,1);analogWrite(PWM2,0);    
+}
+
+void motorControl(int _speedL, int _speedR){
+    motor1(_speedL);
+    motor2(_speedR);
 }
 
 

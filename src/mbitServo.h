@@ -2,7 +2,7 @@
   This is modify of Servo.h library for BBC micro:bit board on Arduino Platfrom
   Support NRF5 MCU & BBC mirco:bit Tested on iBIT Board is Work
   Modify by 
-    Pakpoom Eiamsouyngam
+    Phuwasit Eiamsouyngam
     P-Robot
     Thailand
   date  23/12/2018

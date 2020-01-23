@@ -22,10 +22,14 @@ bool bottonB(){
     return digitalRead(11);
 }
 
-#endif
-
-
 void bottonA_press(){
     while(bottonA);
     while(!bottonA);
 }
+
+void bottonB_press(){
+    while(bottonB);
+    while(!bottonB);
+}
+
+#endif

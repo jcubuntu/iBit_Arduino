@@ -11,7 +11,7 @@ void IBIT(){
     analogReadResolution(12);
     pinMode(DIR1,OUTPUT);   pinMode(DIR2,OUTPUT);
     pinMode(PWM1,OUTPUT);   pinMode(PWM2,OUTPUT);
-    pinMode(5, INPUT); pinMode(11, INPUT);
+    pinMode(5, INPUT_PULLUP); pinMode(11, INPUT_PULLUP);
 }
 
 bool bottonA(){

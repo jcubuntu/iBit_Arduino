@@ -9,6 +9,11 @@ int analog(uint8_t ch){
     }
 }
 
+int in(uint8_t ch){
+    pinMode(ch, input);
+    return digitalRead(ch);
+}
+
 int readADC(uint8_t chanel){ 
     uint8_t data[2];
     Wire.beginTransmission(72);

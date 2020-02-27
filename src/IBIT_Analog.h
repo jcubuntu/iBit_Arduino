@@ -16,5 +16,6 @@
 
 int analog(uint8_t ch);
 int readADC(uint8_t chanel);
+int in(uint8_t ch);
 
 #endif

@@ -10,7 +10,7 @@ int analog(uint8_t ch){
 }
 
 int in(uint8_t ch){
-    pinMode(ch, input);
+    pinMode(ch, INPUT);
     return digitalRead(ch);
 }
 
